@@ -69,12 +69,14 @@ How would we reference each of the following categories of elements?
 -   Only those elements belonging to both the `important` and `red` _classes_
 -   All `p` elements whose parent elements are `div`s
 
-<!-- your answer starts here -->
--   .big
--   #contentPane
--   .important.red
--   div > p
-<!-- your answer ends here -->
+```css
+
+.big
+#contentPane
+.important.red
+div > p
+
+```
 
 ## Question 4
 
@@ -99,7 +101,7 @@ will the div labeled 'specialDiv' have?
 
 **main.css**
 
-```CSS
+```css
 * {
   color: black;
 }
@@ -117,9 +119,7 @@ div {
 }
 ```
 
-<!-- your answer starts here -->
 Font family will be cursive Color will be yellow
-<!-- your answer ends here -->
 
 ## Question 5
 
@@ -141,24 +141,26 @@ arranged on the page?
 **index.html**
 
 ```HTML
+
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
-  <div class="divOne"></div>
-  <div class="divTwo"></div>
-  <div class="divThree"></div>
-  <div class="divFour"></div>
-  <div class="divFive"></div>
-</body>
+  <head>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="divOne"></div>
+    <div class="divTwo"></div>
+    <div class="divThree"></div>
+    <div class="divFour"></div>
+    <div class="divFive"></div>
+  </body>
 </html>
+
 ```
 
 **style.css**
 
-```CSS
+```css
 div {
   /* ... */
   /* Some other specifications, e.g. dimensions. */
@@ -175,15 +177,11 @@ div {
 }
 ```
 
-<!-- your answer starts here -->
-
 .divOne will be in the top-right corner; .divTwo will be in the top-left corner,
 with .divThree immediately to its right; .divFour will be underneath .divTwo,
 and .divFive will sit immediately to the right of .divFour (under .divThree).
 
 In short: 2 3 1 4 5
-
-<!-- your answer ends here -->
 
 ## Question 7
 
@@ -208,7 +206,5 @@ with the class `.stretch` be at a _screen width_ of 550px?
 }
 ```
 
-<!-- your answer starts here -->
 `137.5 px` - Reason being that since it's `min-width`, the media query will have
 `.stretch` be 25% and at 550px width, 25% is `137.5 px`.
-<!-- your answer ends here -->
